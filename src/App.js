@@ -1,4 +1,6 @@
 import './App.css';
+import images from './images.js'
+import Image from './components/image.js'
 
 function App() {
   return (
@@ -21,13 +23,21 @@ function App() {
         </h2>
       </div>
       <div>
-      <p className="small-header">What am I working on?</p>
+        <p className="small-header">What am I working on?</p>
         <h2>
           Projects
         </h2>
+        {images.map((image) => {
+          return (
+            <Image
+              key={image.name}
+              name={image.name}
+              src={image.image} />
+          )
+        })}
       </div>
       <div>
-      <p className="small-header">Do you need a Data Engineer?</p>
+        <p className="small-header">Do you need a Data Engineer?</p>
         <h2>
           Contact me
         </h2>
