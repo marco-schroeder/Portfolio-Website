@@ -14,7 +14,7 @@ const images = [
     {
         name: "pornhub",
         image: "/images/charlesdeluvio-FpKysIoZ6go-unsplash.jpg"
-    }
+    },
 ]
 
 export default images;

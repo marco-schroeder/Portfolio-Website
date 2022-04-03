@@ -1,0 +1,18 @@
+.picture-container {
+  position: relative;
+  color: white;
+  padding-bottom: 5rem;
+}
+
+.picture {
+    height: 50rem;
+    width: 40rem;
+}
+
+.text {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    font-size: 4rem;
+    font-weight: 500;
+}

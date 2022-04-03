@@ -1,6 +1,7 @@
 import './App.css';
 import images from './images.js'
 import Image from './components/image.js'
+import Button from './components/button.js'
 
 function App() {
   return (
@@ -9,6 +10,10 @@ function App() {
         Marco Schröder
       </h1>
       <div className="landing-container">
+        <div className="buttons">
+          <Button source="/images/icons8-gmail-240.png" text="E-Mail"/>
+          <Button source="/images/icons8-linkedin-240.png" text="LinkedIn"/>
+        </div>
         <h2>
           Data Engineer
         </h2>
@@ -21,28 +26,34 @@ function App() {
         <h2>
           About me
         </h2>
+        <div className="img-container">
+          <Image
+            name="work experience"
+            src="/images/jose-losada-DyFjxmHt3Es-unsplash.jpg"
+          />
+          <Image
+            name="education"
+            src="/images/shunya-koide-1emWndlDHs0-unsplash.jpg"
+          />
+        </div>
       </div>
       <div>
         <p className="small-header">What am I working on?</p>
         <h2>
           Projects
         </h2>
-        {images.map((image) => {
-          return (
-            <Image
-              key={image.name}
-              name={image.name}
-              src={image.image} />
-          )
-        })}
+        <div className="img-container">
+          {images.map((image) => {
+            return (
+              <Image
+                key={image.name}
+                name={image.name}
+                src={image.image} />
+            )
+          })}
+        </div>
       </div>
-      <div>
-        <p className="small-header">Do you need a Data Engineer?</p>
-        <h2>
-          Contact me
-        </h2>
-      </div>
-      <footer className="small-header align-center">Made with ♥ by Marco</footer>
+      <footer className="small-header align-center">Made with ♥ by Marco. Hosted on <a href="https://www.google.de" target="_blank">Github Pages</a>.</footer>
     </div>
   );
 }

@@ -2,11 +2,9 @@ import './image.css'
 
 function Image(props) {
   return (
-    <div>
-        <img 
-          src={props.src}
-        />
-        <div>{props.name}</div>
+    <div className="picture-container">
+        <img className="picture" src={props.src}/>
+        <div className="text">{props.name}</div>
     </div>
   );
 }

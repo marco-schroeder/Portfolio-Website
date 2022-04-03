@@ -1,12 +1,22 @@
 .App {
-  padding: 1rem;
+  padding: 2rem;
+  background-image: url("./../public/images/IMG_8661-removebg.png");
+  background-size: 40%;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
 }
+
 .landing-container {
   max-width: 50%;
 }
 
+.buttons button{
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -24,6 +34,11 @@ h2 {
   letter-spacing: .2rem;
   text-transform: uppercase;
   line-height: 0;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .align-center {

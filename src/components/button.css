@@ -1,0 +1,32 @@
+.button {
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+    display: inline-block;
+    white-space:nowrap;
+    text-align: left;
+}
+
+.button-text {
+    margin-left: 5px;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+.button-icon {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+}
+
+.button:hover {
+    width: 7.5rem;
+    border-radius: 30px;
+    transition: all .2s cubic-bezier(.3,0,.5,1) .2s;
+    transform: translate3d(0,0,0);
+    background-color: #000;
+  }
