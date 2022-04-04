@@ -14,9 +14,9 @@
   width: 40rem;
 }
 
-.picture:hover {
+.picture-container:hover .picture{
   -webkit-transition : -webkit-filter 300ms linear;
-  -webkit-filter: brightness(20%);
+  -webkit-filter: brightness(10%);
 }
 
 .text {
