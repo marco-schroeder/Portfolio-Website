@@ -11,8 +11,7 @@ import Button from './components/button.js'
 
 function App() {
   useEffect(() => {
-    let img = document.querySelector("h2").offsetTop;
-    console.log("test");
+    let img = document.querySelector("p").offsetTop;
     window.onscroll = function () {
       if (window.pageYOffset > 0) {
         let opac = (window.pageYOffset / img);
