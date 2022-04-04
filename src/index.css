@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("./../public/images/IMG_8661-removebg.png");
+  background-size: 55%;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
 }
 
 code {
