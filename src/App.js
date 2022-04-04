@@ -25,7 +25,7 @@ function App() {
       <div className="landing-container">
         <div className="buttons">
           <Button source="/images/icons8-gmail-240.png" text="E-Mail" />
-          <Button source="/images/icons8-github-240.png" text="Github" href="https://github.com/marco01123581321"/>
+          <Button source="/images/icons8-github-240 (1).png" text="Github" href="https://github.com/marco01123581321"/>
           <Button source="/images/icons8-linkedin-240.png" text="LinkedIn" href="https://de.linkedin.com/in/marco-schr%C3%B6der-14041a1b0" />
         </div>
         <h2 className="title">
