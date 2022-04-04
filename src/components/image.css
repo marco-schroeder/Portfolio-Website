@@ -4,15 +4,41 @@
   padding-bottom: 5rem;
 }
 
+.picture-container:hover .text-on-hover {
+  visibility: visible;
+  opacity: 1;
+}
+
 .picture {
-    height: 50rem;
-    width: 40rem;
+  height: 50rem;
+  width: 40rem;
+}
+
+.picture:hover {
+  -webkit-transition : -webkit-filter 300ms linear;
+  -webkit-filter: brightness(20%);
 }
 
 .text {
-    position: absolute;
-    top: 2rem;
-    left: 4rem;
-    font-size: 4rem;
-    font-weight: 500;
+  position: relative;
+  bottom: 48rem;
+  left: 4rem;
+  font-size: 4rem;
+  font-weight: 500;
+  height: 2rem;
+}
+
+.experience-text {
+  position: absolute;
+  top: 8rem;
+  left: 4rem;
+}
+
+.text-on-hover:first-child {
+  top: -42rem;
+}
+
+.text-on-hover {
+  margin-top: 1rem;
+  visibility: hidden;
 }

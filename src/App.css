@@ -1,17 +1,31 @@
 .App {
   padding: 2rem;
-  background-image: url("./../public/images/IMG_8661-removebg.png");
-  background-size: 40%;
+  background: /*linear-gradient(to right, rgba(255,255,255,0) 10%,
+  rgba(255,255,255,1)), */url("./../public/images/IMG_8661-removebg.png");
+  background-size: 55%;
   background-position: 100% 0%;
   background-repeat: no-repeat;
 }
 
-.landing-container {
-  max-width: 50%;
+.blur {
+  -webkit-filter: blur(4px);
 }
 
-.buttons button{
-  display: block;
+.landing-container {
+  max-width: 48%;
+  min-height: 35rem;
+}
+
+.top-area {
+  min-height: 22rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons button {
+  /* display: block; */
   margin-bottom: 0.5rem;
 }
 
@@ -23,9 +37,16 @@ h2 {
   font-size: 4rem;
 }
 
+.title {
+
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
 .subtitle {
   font-size: 1.3rem;
   color: #666;
+  margin-bottom: 3rem;
 }
 
 .small-header {
@@ -34,6 +55,7 @@ h2 {
   letter-spacing: .2rem;
   text-transform: uppercase;
   line-height: 0;
+  margin-bottom: 1rem;
 }
 
 .img-container {
