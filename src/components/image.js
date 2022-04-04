@@ -1,6 +1,6 @@
 import './image.css'
 
-function Image({ src, name, exp, data }) {
+function Image({ src, name, exp, data , url, description}) {
   return (
     <div className="picture-container">
       <img className="picture" src={src} />
@@ -14,7 +14,14 @@ function Image({ src, name, exp, data }) {
                 <p className="small-header">{station.year}</p>
                 <p>{station.description}</p>
               </div>)
-          }) : ''}
+          }) : <div className="text-on-hover">
+            <h3>
+              {description}
+            </h3>
+            <a className="github-link" href={url} target="_blank">
+              View it on Github →
+            </a>
+              </div>}
       </div>
     </div>
   );

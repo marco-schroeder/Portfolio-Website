@@ -1,10 +1,5 @@
 .App {
-  padding: 2rem;
-  background: /*linear-gradient(to right, rgba(255,255,255,0) 10%,
-  rgba(255,255,255,1)), */url("./../public/images/IMG_8661-removebg.png");
-  background-size: 55%;
-  background-position: 100% 0%;
-  background-repeat: no-repeat;
+  padding: 4rem;
 }
 
 .blur {
@@ -13,11 +8,11 @@
 
 .landing-container {
   max-width: 48%;
-  min-height: 35rem;
+  min-height: 25rem;
 }
 
 .top-area {
-  min-height: 22rem;
+  min-height: 28rem;
 }
 
 .buttons {
@@ -31,6 +26,7 @@
 
 h1 {
   font-size: 3rem;
+  margin-bottom: 0rem;
 }
 
 h2 {
@@ -38,9 +34,7 @@ h2 {
 }
 
 .title {
-
   margin-top: -1rem;
-  margin-bottom: -1rem;
 }
 
 .subtitle {
@@ -61,8 +55,72 @@ h2 {
 .img-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .align-center {
   text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-0.6em);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(0.6em);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-icon__wheel-outer {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: .6em;
+  height: 1em;
+  width: .4em;
+  margin-left: -.2em;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: #000;
+  animation: scroll 2.75s ease-in-out infinite;
+}
+
+.scroll-icon {
+  display: flex;
+  position: relative;
+  height: 3em;
+  width: 1.5em;
+  border: .25em solid #000;
+  border-radius: 1em;
+  position: fixed;
+}
+
+.scroll {
+  margin-top: -2rem;
+  margin-bottom: 12rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
