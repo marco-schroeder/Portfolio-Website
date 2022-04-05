@@ -134,6 +134,15 @@ h2 {
   justify-content: center;
 }
 
+#aboutme {
+  padding-top: 4rem;
+}
+
+.border {
+  border-top: 1px solid #666;
+  padding-top: 4rem;
+}
+
 .fadeInBottom { animation-name: fadeInBottom }
 @keyframes fadeInBottom {
     from {

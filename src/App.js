@@ -34,7 +34,7 @@ function App() {
       </div>
       <div className="landing-container">
         <h2 className="title cssanimation fadeInBottom shadow">
-          Data Engineer
+          Job Title
         </h2>
         <p className="subtitle cssanimation fadeInBottom">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -88,7 +88,7 @@ function App() {
             })}
           </div>
         </div>
-      <footer className="small-header align-center">Made with ♥ by <a href="http://lisa.eichwitz.de/" target="_blank">Lisa</a> & Marco. Hosted on <a href="https://www.google.de" target="_blank">Github Pages</a>.</footer>
+      <footer className="small-header align-center border">Made with ♥ by <a href="http://lisa.eichwitz.de/" target="_blank">Lisa</a> & Marco. Hosted on <a href="https://www.google.de" target="_blank">Github Pages</a>.</footer>
     </div>
   );
 }
