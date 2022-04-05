@@ -9,7 +9,7 @@
 
 .landing-container {
   max-width: 48%;
-  min-height: 25rem;
+  min-height: 20rem;
 }
 
 .top-area {
@@ -28,10 +28,12 @@
 h1 {
   font-size: 3rem;
   margin-bottom: 0rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
   font-size: 4rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .title {
@@ -51,6 +53,11 @@ h2 {
   text-transform: uppercase;
   line-height: 0;
   margin-bottom: 1rem;
+}
+
+.cssanimation {
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
 .img-container {
@@ -113,7 +120,6 @@ h2 {
   width: 1.5em;
   border: .25em solid #000;
   border-radius: 1em;
-  position: fixed;
 }
 
 .scroll {
@@ -124,4 +130,13 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
 }
