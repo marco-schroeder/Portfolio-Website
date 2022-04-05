@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="top-area">
-        <h1 className="cssanimation fadeInBottom">
+        <h1 className="cssanimation fadeInBottom shadow">
           Marco Schröder
         </h1>
         <div className="buttons cssanimation fadeInBottom">
@@ -33,11 +33,11 @@ function App() {
         </div>
       </div>
       <div className="landing-container">
-        <h2 className="title cssanimation fadeInBottom">
+        <h2 className="title cssanimation fadeInBottom shadow">
           Data Engineer
         </h2>
         <p className="subtitle cssanimation fadeInBottom">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         </p>
       </div>
       <div className="scroll">
@@ -50,7 +50,7 @@ function App() {
       <Fade>
         <div>
           <p className="small-header">Who am I?</p>
-          <h2>
+          <h2 className="shadow">
             About me
           </h2>
           <div className="img-container">
@@ -70,7 +70,7 @@ function App() {
         </div>
         <div>
           <p className="small-header">What am I working on?</p>
-          <h2>
+          <h2 className="shadow">
             Projects
           </h2>
           <div className="img-container">
