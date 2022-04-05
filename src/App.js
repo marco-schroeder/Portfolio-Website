@@ -40,16 +40,17 @@ function App() {
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         </p>
       </div>
-      <div className="scroll">
-        <span className="scroll-icon">
-          <span className="scroll-icon__wheel-outer">
-            <span className="scroll-icon__wheel-inner"></span>
+      <a href="#aboutme">
+        <div className="scroll">
+          <span className="scroll-icon">
+            <span className="scroll-icon__wheel-outer">
+              <span className="scroll-icon__wheel-inner"></span>
+            </span>
           </span>
-        </span>
-      </div>
-      <Fade>
-        <div>
-          <p className="small-header">Who am I?</p>
+        </div>
+      </a>
+        <div id="aboutme">
+          <p className="small-header">Who I am</p>
           <h2 className="shadow">
             About me
           </h2>
@@ -69,7 +70,7 @@ function App() {
           </div>
         </div>
         <div>
-          <p className="small-header">What am I working on?</p>
+          <p className="small-header">What I do</p>
           <h2 className="shadow">
             Projects
           </h2>
@@ -87,7 +88,6 @@ function App() {
             })}
           </div>
         </div>
-      </Fade>
       <footer className="small-header align-center">Made with ♥ by <a href="http://lisa.eichwitz.de/" target="_blank">Lisa</a> & Marco. Hosted on <a href="https://www.google.de" target="_blank">Github Pages</a>.</footer>
     </div>
   );
