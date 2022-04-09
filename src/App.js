@@ -49,15 +49,7 @@ function App() {
           Learn more about <a href="#aboutme">me</a> or my <a href="#projects">projects</a>.
         </p>
       </div>
-      <a href="#aboutme">
-        <div className="scroll">
-          <span className="scroll-icon">
-            <span className="scroll-icon__wheel-outer">
-              <span className="scroll-icon__wheel-inner"></span>
-            </span>
-          </span>
-        </div>
-      </a>
+      <a href="#aboutme"></a>
       <div id="aboutme">
         <p className="small-header">Who I am</p>
         <h2 className="shadow">
