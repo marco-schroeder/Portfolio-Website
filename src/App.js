@@ -95,7 +95,7 @@ function App() {
           })}
         </div>
       </div>
-      <footer className="small-header align-center border">Made with ♥ by <a href="http://lisa.eichwitz.de/" target="_blank">Lisa</a> & Marco. Hosted on <a href="https://www.google.de" target="_blank">Github Pages</a>.</footer>
+      <footer className="small-header align-center border">Made with ♥ by <a href="http://lisa.eichwitz.de/" target="_blank">Lisa</a> & Marco. Hosted on <a href="https://github.com/marco01123581321/Portfolio-Website" target="_blank">Github Pages</a>.</footer>
     </div>
   );
 }
