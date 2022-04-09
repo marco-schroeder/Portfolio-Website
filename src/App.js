@@ -11,12 +11,18 @@ import Button from './components/button.js'
 
 function App() {
   useEffect(() => {
-    let img = document.querySelector(".subtitle").offsetTop;
-    window.onscroll = function () {
-      if (window.pageYOffset > 0) {
-        let opac = (window.pageYOffset / img);
-        console.log(opac);
-        document.body.style.background = "linear-gradient(rgba(255, 255, 255, " + opac + "), rgba(255, 255, 255, " + opac + ")), url(/images/IMG_8661-removebg-overlay.png) 100% 0% /55% no-repeat";
+    var x = window.matchMedia("(min-width: 700px)")
+    if (x.matches) {
+      let img = document.querySelector(".subtitle").offsetTop;
+      window.onscroll = function () {
+        if (window.pageYOffset > 0) {
+          let opac = (window.pageYOffset / img);
+          console.log(opac);
+          document.body.style.background = "linear-gradient(rgba(255, 255, 255, " + opac + "), rgba(255, 255, 255, " + opac + ")), url(/images/IMG_8661-removebg-overlay.png) 100% 0% /55% no-repeat";
+        }
+        else {
+          document.body.style.backgroundColor = "#fff";
+        }
       }
     }
   }, [])
@@ -34,7 +40,7 @@ function App() {
       </div>
       <div className="landing-container">
         <h2 className="title cssanimation fadeInBottom shadow">
-          Job Title
+          Data Engineer
         </h2>
         <p className="subtitle cssanimation fadeInBottom">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -49,45 +55,46 @@ function App() {
           </span>
         </div>
       </a>
-        <div id="aboutme">
-          <p className="small-header">Who I am</p>
-          <h2 className="shadow">
-            About me
-          </h2>
-          <div className="img-container">
-            <Image
-              name="work experience"
-              exp="true"
-              src="/images/safar-safarov-koOdUvfGr4c-unsplash.jpg"
-              data={workexp}
-            />
-            <Image
-              name="education"
-              exp="true"
-              src="/images/shunya-koide-1emWndlDHs0-unsplash.jpg"
-              data={education}
-            />
-          </div>
+      <div id="aboutme">
+        <p className="small-header">Who I am</p>
+        <h2 className="shadow">
+          About me
+        </h2>
+        <div className="img-container">
+          <Image
+            name="work"
+            exp="true"
+            src="/images/safar-safarov-koOdUvfGr4c-unsplash.jpg"
+            data={workexp}
+          />
+          <Image
+            name="education"
+            exp="true"
+            src="/images/shunya-koide-1emWndlDHs0-unsplash.jpg"
+            data={education}
+          />
         </div>
-        <div>
-          <p className="small-header">What I do</p>
-          <h2 className="shadow">
-            Projects
-          </h2>
-          <div className="img-container">
-            {images.map((image) => {
-              return (
-                <Image
-                  key={image.name}
-                  name={image.name}
-                  src={image.image}
-                  description={image.description}
-                  url={image.url}
-                />
-              )
-            })}
-          </div>
+      </div>
+      <div>
+        <p className="small-header">What I do</p>
+        <h2 className="shadow">
+          Projects
+        </h2>
+        <div className="img-container">
+          {images.map((image) => {
+            return (
+              <Image
+                key={image.name}
+                name={image.name}
+                src={image.image}
+                description={image.description}
+                url={image.url}
+                skills={image.skills}
+              />
+            )
+          })}
         </div>
+      </div>
       <footer className="small-header align-center border">Made with ♥ by <a href="http://lisa.eichwitz.de/" target="_blank">Lisa</a> & Marco. Hosted on <a href="https://www.google.de" target="_blank">Github Pages</a>.</footer>
     </div>
   );
