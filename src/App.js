@@ -45,6 +45,9 @@ function App() {
         <p className="subtitle cssanimation fadeInBottom">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         </p>
+        <p className="subtitle cssanimation fadeInBottom">
+          Learn more about <a href="#aboutme">me</a> or my <a href="#projects">projects</a>.
+        </p>
       </div>
       <a href="#aboutme">
         <div className="scroll">
@@ -75,7 +78,7 @@ function App() {
           />
         </div>
       </div>
-      <div>
+      <div id="projects">
         <p className="small-header">What I do</p>
         <h2 className="shadow">
           Projects
