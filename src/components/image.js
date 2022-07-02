@@ -12,12 +12,12 @@ function Image({ src, name, exp, data, url, description, skills }) {
         {exp ?
           data.map((station) => {
             return (
-              <div key={station.title} className="text-on-hover visibility-hidden">
+              <div className="text-on-hover visibility-hidden">
                 <h3>{station.title}</h3>
                 <p className="small-header">{station.year}</p>
                 <p>{station.description}</p>
               </div>)
-          }) : <div key={station.title} className='visibility-hidden'><div className="text-on-hover">
+          }) : <div className='visibility-hidden'><div className="text-on-hover">
             <h3>
               {description}
             </h3>
